@@ -17,7 +17,7 @@ public class Business {
             }
         }
         for (int j = 1; j <= 2; j++) {
-            System.out.println("sub com.hurricane.thread.thread sequence of " + j + ",loop of " + i);
+            System.out.println("sub com.hurricane.module.module sequence of " + j + ",loop of " + i);
         }
         bShouldSub = false;
         //唤醒main
@@ -33,7 +33,7 @@ public class Business {
             }
         }
         for (int j = 1; j <= 3; j++) {
-            System.out.println("main com.hurricane.thread.thread sequence of " + j + ",loop of " + i);
+            System.out.println("main com.hurricane.module.module sequence of " + j + ",loop of " + i);
         }
         bShouldSub = true;
         //唤醒sub
