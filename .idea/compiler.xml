@@ -22,12 +22,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="GuavaPro" />
         <module name="ThreadPro" />
         <module name="UnitPro" />
         <module name="UnitTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="GuavaPro" target="1.5" />
       <module name="ProMy" target="1.5" />
       <module name="ThreadPro" target="1.5" />
       <module name="UnitPro" target="1.5" />

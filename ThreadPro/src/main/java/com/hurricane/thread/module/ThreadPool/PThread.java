@@ -37,10 +37,11 @@ public class PThread extends Thread {
         while (true) {
             try {
                 if(target!=null){
+                    System.out.println(target);
                     target.run();
                     threadPool.rePool(this);
                     synchronized (this) {
-                        wait();
+                        this.wait();
                     }
                 }
             } catch (InterruptedException e) {

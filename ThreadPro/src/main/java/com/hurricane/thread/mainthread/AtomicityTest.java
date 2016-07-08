@@ -25,7 +25,6 @@ public class AtomicityTest implements Runnable {
         }
     }
 
-    @Override
     public void run() {
         while (true)
             evenIncrement();

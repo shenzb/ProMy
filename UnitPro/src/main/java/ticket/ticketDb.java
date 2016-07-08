@@ -3,6 +3,7 @@ package ticket;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.math.BigInteger;
+import java.util.List;
 
 /**
  * Created by zhenbiao.shen on 2016/6/12.
@@ -19,8 +20,35 @@ public class ticketDb {
 
     public static void main(String[] args) {
 
-        String ticket="8222325294544";
-        System.out.println(getTicketNumTableIndex(ticket));
+        ticketDb ticketDb=new ticketDb();
+        Boolean isflag=false;
+        Test test=new Test();
+        ticketDb.getResponse(test);
 
+        System.out.println(test);
     }
+
+    private void getResponse(Test test){
+        test.setFlag(true);
+//        return null;
+    }
+
+   static class Test{
+       boolean isFlag;
+
+        public boolean isFlag() {
+            return isFlag;
+        }
+
+        public void setFlag(boolean flag) {
+            isFlag = flag;
+        }
+
+       @Override
+       public String toString() {
+           return "Test{" +
+                   "isFlag=" + isFlag +
+                   '}';
+       }
+   }
 }
